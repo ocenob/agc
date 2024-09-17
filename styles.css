@@ -1,0 +1,30 @@
+/* Custom CSS untuk card film */
+.movie-card {
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-card .card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.movie-card .card-title {
+  margin: 0;
+}
+
+.movie-card:hover .card-body {
+  background: rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Detail</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Movie App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="genres.html">Genres</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="popular.html">Popular</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="now-playing.html">Now Playing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="upcoming.html">Upcoming</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="top-rated.html">Top Rated</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Movie Detail Section -->
+  <div class="container mt-4">
+    <button id="back-button" class="btn btn-primary mb-4" onclick="window.history.back()">Back</button>
+    <div class="row">
+      <div class="col-md-4">
+        <img id="movie-poster" src="" alt="Movie Poster" class="img-fluid">
+      </div>
+      <div class="col-md-8">
+        <h2 id="movie-title"></h2>
+        <p id="movie-tagline" class="font-italic"></p>
+        <p id="movie-release-date"><strong>Release Date:</strong> <span></span></p>
+        <p id="movie-genres"><strong>Genres:</strong> <span></span></p>
+        <p id="movie-duration"><strong>Duration:</strong> <span></span></p>
+        <p id="movie-original-language"><strong>Original Language:</strong> <span></span></p>
+        <p id="movie-vote-average"><strong>Vote Average:</strong> <span></span></p>
+        <p id="movie-vote-count"><strong>Vote Count:</strong> <span></span></p>
+        <p id="movie-overview"><strong>Overview:</strong> <span></span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom JS for movie details -->
+  <script src="movie-detail.js"></script>
+</body>
+
+</html>
